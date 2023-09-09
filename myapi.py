@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Path
+
 import uvicorn
 
 app = FastAPI()
@@ -23,4 +24,4 @@ async def get_student(student_id: int = Path(title="The ID of the student you wa
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8003, reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
